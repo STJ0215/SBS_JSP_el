@@ -1,29 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
-	<!--
-		- EL(Expression Language)Àº JSP 2.0 ½ºÆå¿¡ Ãß°¡µÈ °³³äÀÌ´Ù.
-		- EL¹®ÀÚ : ELÀÇ Ç¥Çö½Ä¿¡¼­ ¹®ÀÚ·Î »ç¿ë °¡´ÉÇÑ Ç¥ÇöÀº ³í¸®, ¼ıÀÚ, ¹®ÀÚ¿­, null µ¥ÀÌÅÍÀÌ´Ù.
-			³í¸® : true, false
-			¼ıÀÚ : Á¤¼ö, ½Ç¼ö
-			¹®ÀÚ¿­ : "" ¶Ç´Â ''·Î Ç¥Çö
-			»ê¼ú ¿¬»êÀÚ : +, -, *, /, %, mod
-			³í¸® ¿¬»êÀÚ : &&, ||, !, and, or, not
-			empty ¿¬»êÀÚ : °ªÀÌ null ÀÌ³ª °ø¹é ¹®ÀÚÀÎÁö¸¦ ÆÇ´ÜÇÏ´Â ¿¬»êÀÚ
-			ex) ${empty ""} ==> true
-	-->
-	
-	Literals : ${"Literals"} <br>
-	Operation : ${5 > 3} <br>
-	
-	id : ${param.id} <br>
-	id : ${param["id"]} <br>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>el</title>
+	</head>
+	<body>
+		<!--
+			- EL(Expression Language)ì€ JSP 2.0 ìŠ¤í™ì— ì¶”ê°€ëœ ê°œë…ì´ë‹¤.
+			- ELë¬¸ì : ELì˜ í‘œí˜„ì‹ì—ì„œ ë¬¸ìë¡œ ì‚¬ìš© ê°€ëŠ¥í•œ í‘œí˜„ì€ ë…¼ë¦¬, ìˆ«ì, ë¬¸ìì—´, null ë°ì´í„°ì´ë‹¤.
+				ë…¼ë¦¬ : true, false
+				ìˆ«ì : ì •ìˆ˜, ì‹¤ìˆ˜
+				ë¬¸ìì—´ : "" ë˜ëŠ” ''ë¡œ í‘œí˜„
+				ì‚°ìˆ  ì—°ì‚°ì : +, -, *, /, %, mod
+				ë…¼ë¦¬ ì—°ì‚°ì : &&, ||, !, and, or, not
+				empty ì—°ì‚°ì : ê°’ì´ null ì´ë‚˜ ê³µë°± ë¬¸ìì¸ì§€ë¥¼ íŒë‹¨í•˜ëŠ” ì—°ì‚°ì
+				ex) ${empty ""} ==> true
+		-->
+		
+		Literals : ${"Literals"} <br>
+		Operation : ${5 > 3} <br>
+		
+		id : ${param.id} <br>
+		id : ${param["id"]} <br>
+	</body>
 </html>

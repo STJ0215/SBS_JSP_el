@@ -2,16 +2,16 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-	<form action="bookProc.jsp" method="POST">
-		책 제목 : <input type="text" name="title"> <br>
-		책 저자 : <input type="text" name="author"> <br>
-		책 출판사 : <input type="text" name="publisher"> <br>
-		<input type="submit" value="등록">
-	</form>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>책 등록</title>
+	</head>
+	<body>
+		<form action="bookProc.jsp" method="POST">
+			책 제목 : <input type="text" name="title"> <br>
+			책 저자 : <input type="text" name="author"> <br>
+			책 출판사 : <input type="text" name="publisher"> <br>
+			<input type="submit" value="등록">
+		</form>
+	</body>
 </html>
